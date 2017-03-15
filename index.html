@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Photos's duyetdev!</title>
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./assets/styles.css">
+	<meta name="viewport" content="width=device-width">
+	<link href="https://fonts.googleapis.com/css?family=Jim+Nightshade" rel="stylesheet">
+	<script type="text/javascript" src="./assets/instafeed.min.js"></script>
+	<script type="text/javascript">
+    var feed = new Instafeed({
+		clientId: 'c6fe18821abf4c69bcf0311306305236',
+		accessToken: '1721857963.c6fe188.79c8f1e29ee34cadae880287ce511bc8',
+		get: 'user',
+		userId: '1721857963',
+		limit: 50,
+		resolution: 'standard_resolution',
+		template: '<div class="col-md-3 col-xs-4 image-box"><a href="{{link}}"><img src="{{image}}" class="img-responsive" /></a></div>'
+    });
+    feed.run();
+</script>
+</head>
+<body>
+
+<div class="container">
+	<div class="page-header">
+	  <h1>photo.duyet.net<small></small></h1>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div id="instafeed"></div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<footer>
+			<hr />
+			<a href="https://duyet.net">duyet.net</a>
+		</footer>
+	</div>
+</div>
+
+
+</body>
+</html>
